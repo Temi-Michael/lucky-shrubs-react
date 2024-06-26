@@ -23,7 +23,7 @@ export default function Services() {
     <main>
       <div>
         <form>
-          <fieldset>
+          <div className='fieldset'>
             <label htmlFor="name" className="label">
               Name
             </label>
@@ -34,8 +34,8 @@ export default function Services() {
               className="input"
               onChange={(e) => setName(e.target.value)}
             />
-          </fieldset>
-          <fieldset>
+          </div>
+          <div className='fieldset'>
             <label htmlFor="email" className="label">
               Email
             </label>
@@ -46,8 +46,8 @@ export default function Services() {
               className="input"
               onChange={(e) => setEmail(e.target.value)}
             />
-          </fieldset>
-          <fieldset>
+          </div>
+          <div className='fieldset'>
             <label htmlFor="phone" className="label">
               Phone
             </label>
@@ -58,8 +58,8 @@ export default function Services() {
               className="input"
               onChange={(e) => setPhone(e.target.value)}
             />
-          </fieldset>
-          <fieldset>
+          </div>
+          <div className='fieldset'>
             <label htmlFor="info" className="label">
               Info
             </label>
@@ -68,8 +68,8 @@ export default function Services() {
               className="info"
               onChange={(e) => setInfo(e.target.value)}
             />
-          </fieldset>
-          <button onClick={handleSubmit}>Submit</button>
+          </div>
+          <button className="btn" onClick={handleSubmit}>Submit</button>
         </form>
       </div>
     </main>
